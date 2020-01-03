@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import '../models/models.dart';
-import 'dart:math';
 
 class BmiData{
   double bmi;
@@ -68,7 +67,6 @@ class Data extends ChangeNotifier{
 
   void changeGender(){
     _data.male=!_data.male;
-    print(_data.male);
     ChangeNotifier();
   }
 
@@ -89,12 +87,15 @@ class Data extends ChangeNotifier{
 
   void decrementDataItem(DataType key){
     if(key==DataType.Age){
+      if(_data.age>0)
       _data.age--;
       }
     else if(key==DataType.Height){
+      if(_data.height>0)
       _data.height--;
     }
     else if(key==DataType.Weight){
+      if(_data.weight>0)
       _data.weight--;
     }
     ChangeNotifier();

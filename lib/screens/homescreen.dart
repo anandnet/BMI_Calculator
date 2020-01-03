@@ -21,7 +21,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final mq=MediaQuery.of(context);
-    final isLandscape = mq.orientation==Orientation.landscape;
     final data=Provider.of<Data>(context,listen: false);
     return Scaffold(
       body: Container(

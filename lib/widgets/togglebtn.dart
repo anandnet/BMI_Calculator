@@ -13,7 +13,6 @@ class ToggleBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final data=Provider.of<Data>(context,listen: false);
-    print("Reloaded");
     return Container(
       child:Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
