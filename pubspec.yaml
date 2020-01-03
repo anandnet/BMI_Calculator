@@ -19,6 +19,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^8.5.0
+  provider: ^3.2.0
+
+
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -56,12 +61,22 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: Exo
+      fonts:
+        - asset: assets/fonts/Exo2-Bold.ttf
+        - asset: assets/fonts/Exo2-Medium.ttf
+        - asset: assets/fonts/Exo2-Regular.ttf
+
+    - family: Exo1
+      fonts:
+        - asset: assets/fonts/Exo3-Bold.ttf
+        - asset: assets/fonts/Exo3-Medium.ttf
+        - asset: assets/fonts/Exo3-Regular.ttf
+
+    - family: LondrinaShadow
+      fonts:
+        - asset: assets/fonts/LondrinaShadow-Regular.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
